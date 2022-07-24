@@ -6,6 +6,8 @@ insert_final_newline = true
 
 [*.{php}]
 charset = utf-8
+trim_trailing_whitespace = true
+indent_brace_style = K&R
 
 [*.php]
 indent_style = space
