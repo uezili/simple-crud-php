@@ -8,7 +8,8 @@
     <div class="alert alert-danger" role="alert">User has been deleted!</div>
 <?php endif; ?>
 
-<div class='mb-2' style='padding: 10px'>
+<div class='mb-2' style='display: flex; justify-content: space-between; padding: 10px'>
+    <img src="https://pbs.twimg.com/profile_images/1413230067862355973/cAOV9v6P_400x400.jpg" class="thumbnail" alt="Instituto Atlantico" style="height: 70px; clip-path: circle(40%); ">
     <button href="#" class="btn btn-primary">Add a new User</button>
 </div>
 <section>
@@ -19,7 +20,7 @@
                 <td>Name</td>
                 <td>E-mail</td>
                 <td>Birthday</td>
-                <td></td>
+                <td width="150"></td>
             </tr>
         <tbody>
             <?php foreach ($dbConnection->query('SELECT * FROM user ORDER BY id DESC') as $user) : ?>
